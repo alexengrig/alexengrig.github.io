@@ -3,8 +3,8 @@
   "username": "alexengrig",
   "name": "Grig Alex",
   "userimg": "https://avatars2.githubusercontent.com/u/36041152?v=4",
-  "sort": "created",
-  "order": "asc",
+  "sort": "star",
+  "order": "desc",
   "includeFork": false,
   "theme": "dark.css",
   "types": [
