@@ -1,6 +1,6 @@
 # [alexengrig.github.io](https://alexengrig.github.io)
 
-My GitHub page that generated via [gitfolio](https://github.com/imfunniee/gitfolio).
+My GitHub page.
 
 # License
 
