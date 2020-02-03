@@ -18,26 +18,20 @@ body {
   flex-direction: column;
 }
 
-.root {
+.link {
   display: flex;
   align-items: center;
   justify-content: center;
   flex: 16;
-}
-
-.link {
   text-decoration: none;
   font-size: 5rem;
 }
 
-.root-info {
+.info {
   display: flex;
   align-items: center;
   justify-content: center;
   flex: 1;
-}
-
-.info {
   font-size: 1.5rem;
 }
 
