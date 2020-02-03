@@ -4,9 +4,14 @@ fetch('https://github-contributions-api.now.sh/v1/alexengrig')
   .then(json => json.contributions)
   .then(contributions => {
     const now = new Date().toISOString().substring(0, 10);
-    const contribution = contributions.find(contribution => contribution.date === now);
-    console.debug('contribution', contribution);
-    return contribution.color;
+    return contributions.find(contribution => contribution.date === now);
   })
-  .then(color => document.body.style.background = color)
-  .catch(e => console.error(e));
+	.then(contribution => {
+		console.debug('contribution', contribution);
+    document.body.style.background = contribution.color;
+    document.getElementById('info').innerHTML = contribution.count + ' contributions on ' + contribution.date;
+	})
+  .catch(e => {
+    document.getElementById('info').innerHTML = 'Error! ' + e.message;
+    console.error(e)
+  });
