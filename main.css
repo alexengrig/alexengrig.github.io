@@ -20,3 +20,9 @@ body {
   text-decoration: none;
   font-size: 5rem;
 }
+
+.root-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
